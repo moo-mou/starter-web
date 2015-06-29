@@ -21,15 +21,9 @@ module.exports = {
 
   module: {
     loaders: [
-      // React.js
-      {
-        test: /\.jsx$/,
-        loader: 'jsx-loader?harmony',
-        exclude: /node_modules/
-      },
       // ES6 support
       {
-        test: /\.js$/,
+        test: /\.jsx?$/,
         exclude: /node_modules/,
         loader: 'babel-loader'
       },
